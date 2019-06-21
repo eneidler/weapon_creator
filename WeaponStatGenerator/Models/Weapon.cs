@@ -37,26 +37,33 @@ namespace WeaponStatGenerator.Models
 		/// <returns>selectedWeapon</returns>
 		public string GetWeaponIcon(string selectedWeapon)
 		{
-			switch (selectedWeapon) 
+			if(!string.IsNullOrEmpty(selectedWeapon))
 			{
-				case "Pistol":
-					selectedWeapon = "/images/pistol.ico";
-					break;
-				case "Shotgun":
-					selectedWeapon = "/images/shotgun.ico";
-					break;	
-				case "Carbine":
-					selectedWeapon = "/images/carbine.ico";
-					break;
-				case "Rifle":
-					selectedWeapon = "/images/rifle.ico";
-					break;
-				case "Sniper":
-					selectedWeapon = "/images/sniper.ico";
-					break;
-				case null:
-					selectedWeapon = "/images/refresh.ico";
-					break;
+				switch (selectedWeapon.ToLower())
+				{
+					case "pistol":
+						selectedWeapon = "/images/pistol.ico";
+						break;
+					case "shotgun":
+						selectedWeapon = "/images/shotgun.ico";
+						break;	
+					case "carbine":
+						selectedWeapon = "/images/carbine.ico";
+						break;
+					case "rifle":
+						selectedWeapon = "/images/rifle.ico";
+						break;
+					case "sniper":
+						selectedWeapon = "/images/sniper.ico";
+						break;
+					default:
+						selectedWeapon = "/images/refresh.ico";
+						break;
+				}
+			}
+			else
+			{
+				selectedWeapon = "/images/refresh.ico";
 			}
 			return selectedWeapon;
 		}

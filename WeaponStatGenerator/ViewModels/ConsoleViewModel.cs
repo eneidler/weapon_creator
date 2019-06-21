@@ -6,7 +6,6 @@
  */
 using System;
 using System.Windows;
-using System.ComponentModel;
 using System.Collections.ObjectModel;
 using WeaponStatGenerator.Services;
 using WeaponStatGenerator.Models;
@@ -17,7 +16,7 @@ namespace WeaponStatGenerator.ViewModels
 	/// ConsoleViewModel is the main viewModel for application. It holds the properties that are bound
 	/// to the view (Console.xaml), as well as containing the logic for the new weapon generator button.
 	/// </summary>
-	public class ConsoleViewModel : INotifyPropertyChanged
+	public class ConsoleViewModel : BaseViewModel
 	{
 		
 		NameGenerator nameGenerator = new NameGenerator();
@@ -171,21 +170,5 @@ namespace WeaponStatGenerator.ViewModels
 		{
 			MessageBox.Show("Please select a weapon type from the list box");
 		}
-	
-		
-	#region INotifyPropertyChanged Implementation Boilerplate
-	    //Property change event handler
-	    /// <summary>
-	    /// This property change event handler will be used to tie in PropertyChanged notifications
-	    /// for use in View to ViewModel databinding.
-	    /// </summary>
-	    public event PropertyChangedEventHandler PropertyChanged;
-	    private void OnPropertyChanged(string name)
-	    {
-	        PropertyChangedEventHandler handler = PropertyChanged;
-	        if (handler != null)
-	            handler(this, new PropertyChangedEventArgs(name));
-	    }
-	#endregion
 	}
 }

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-G:\00) Glitchd Software\Sample Projects\WeaponStats\WeaponStatGenerator\WeaponStatGenerator\obj\Debug\
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\obj\Debug\
 WeaponStatGenerator
 none
 false
 DEBUG;TRACE
-G:\00) Glitchd Software\Sample Projects\WeaponStats\WeaponStatGenerator\WeaponStatGenerator\App.xaml
-1990401907
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\App.xaml
+2-1645528750
 
-161264415044
-17-691791270
-Console.xaml;
+16-1391633875
+15-256801235
+Console.xaml;Controls\WeaponDisplay.xaml;
 
 False
 

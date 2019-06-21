@@ -11,3 +11,19 @@ G:\00) Glitchd Software\Sample Projects\WeaponStats\WeaponStatGenerator\WeaponSt
 G:\00) Glitchd Software\Sample Projects\WeaponStats\WeaponStatGenerator\WeaponStatGenerator\obj\Debug\GeneratedInternalTypeHelper.g.cs
 G:\00) Glitchd Software\Sample Projects\WeaponStats\WeaponStatGenerator\WeaponStatGenerator\obj\Debug\WeaponStatGenerator_MarkupCompile.lref
 G:\00) Glitchd Software\Sample Projects\WeaponStats\WeaponStatGenerator\WeaponStatGenerator\obj\Debug\WeaponStatGenerator.csprojResolveAssemblyReference.cache
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\obj\Debug\WeaponStatGenerator.csprojAssemblyReference.cache
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\obj\Debug\Console.g.cs
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\obj\Debug\Controls\WeaponDisplay.g.cs
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\obj\Debug\App.g.cs
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\obj\Debug\WeaponStatGenerator_MarkupCompile.cache
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\obj\Debug\WeaponStatGenerator_MarkupCompile.lref
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\bin\Debug\WeaponStatGenerator.exe.config
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\bin\Debug\WeaponStatGenerator.exe
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\bin\Debug\WeaponStatGenerator.pdb
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\obj\Debug\Console.baml
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\obj\Debug\Controls\WeaponDisplay.baml
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\obj\Debug\WeaponStatGenerator.g.resources
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\obj\Debug\WeaponStatGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\obj\Debug\WeaponStatGenerator.exe
+C:\Users\Dan\Development\c#\sandbox\code-reviews\weapon-creator\WeaponStatGenerator\obj\Debug\WeaponStatGenerator.pdb

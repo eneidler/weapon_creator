@@ -1,73 +1,4 @@
-﻿/*
- * User: eneidler
- * Date: 06/13/2019
- * Time: 09:29
- * 
- */
-using System;
-
-namespace WeaponStatGenerator.Models
-{
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /// <summary>
-    /// The weapon class is used for giving a framework for the types of weapons,
-    /// and a way to access their icons.
-    /// </summary>
-    public class Weapon
-    {
-        public Weapon(
-            string name,
-            WeaponArchType weaponType,
-            int damageStat,
-            DamageType damageType)
-        {
-            Name = name;
-            WeaponType = weaponType;
-            Damage = damageStat;
-            DamageType = damageType;
-        }
-
-        public string Name { get; }
-        public WeaponArchType WeaponType { get; }
-        public int Damage { get; }
-        public DamageType DamageType { get; }
-
-        public string Icon => GetIcon(WeaponType);
-
-        /// <summary>
-        /// This method is used to provide an abstracted way to deliver the image strings for
-        /// the weapon icons, so they can be easily bound in the ConsoleViewModel.
-        /// </summary>
-        /// <param name="selectedWeapon"></param>
-        /// <returns>selectedWeapon</returns>
-        private string GetIcon(WeaponArchType weaponType)
-        {
-            switch (weaponType)
-            {
-                case WeaponArchType.Pistol:
-                    return "/images/pistol.ico";
-
-                case WeaponArchType.Shotgun:
-                    return "/images/shotgun.ico";
-
-                case WeaponArchType.Carbine:
-                    return "/images/carbine.ico";
-
-                case WeaponArchType.Rifle:
-                    return "/images/rifle.ico";
-
-                case WeaponArchType.Sniper:
-                    return "/images/sniper.ico";
-
-                default:
-                    return "/images/refresh.ico";
-            }
-        }
-    }
-=======
-=======
->>>>>>> parent of e9ec55b... Resolved merge conflict by using the refactor files and code.
+﻿
 	/// <summary>
 	/// The weapon class is used for giving a framework for the types of weapons,
 	/// and a way to access their icons.
@@ -97,7 +28,6 @@ namespace WeaponStatGenerator.Models
 		/// <returns>selectedWeapon</returns>
 		public string GetWeaponIcon(string selectedWeapon)
 		{
-<<<<<<< HEAD
 			if(!string.IsNullOrEmpty(selectedWeapon))
 			{
 				switch (selectedWeapon.ToLower())
@@ -125,35 +55,8 @@ namespace WeaponStatGenerator.Models
 			else
 			{
 				selectedWeapon = "/images/refresh.ico";
-=======
-			switch (selectedWeapon) 
-			{
-				case "Pistol":
-					selectedWeapon = "/images/pistol.ico";
-					break;
-				case "Shotgun":
-					selectedWeapon = "/images/shotgun.ico";
-					break;	
-				case "Carbine":
-					selectedWeapon = "/images/carbine.ico";
-					break;
-				case "Rifle":
-					selectedWeapon = "/images/rifle.ico";
-					break;
-				case "Sniper":
-					selectedWeapon = "/images/sniper.ico";
-					break;
-				case null:
-					selectedWeapon = "/images/refresh.ico";
-					break;
->>>>>>> parent of e9ec55b... Resolved merge conflict by using the refactor files and code.
-			}
-			return selectedWeapon;
+
 		}
 		
 	}
-<<<<<<< HEAD
->>>>>>> cfaac5aab127d08f9cfc654cf44db5101a806ee4
-=======
->>>>>>> parent of e9ec55b... Resolved merge conflict by using the refactor files and code.
-}
+

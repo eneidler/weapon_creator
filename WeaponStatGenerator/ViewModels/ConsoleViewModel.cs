@@ -5,8 +5,6 @@
  * 
  */
 using System;
-<<<<<<< HEAD
-<<<<<<< HEAD
 using System.Collections.Generic;
 using System.Windows.Input;
 =======
@@ -20,13 +18,17 @@ using System.Windows;
 using System.ComponentModel;
 using System.Collections.ObjectModel;
 >>>>>>> parent of e9ec55b... Resolved merge conflict by using the refactor files and code.
+=======
+using System.Windows;
+using System.ComponentModel;
+using System.Collections.ObjectModel;
+>>>>>>> parent of e9ec55b... Resolved merge conflict by using the refactor files and code.
 using WeaponStatGenerator.Services;
 using WeaponStatGenerator.Models;
 
 namespace WeaponStatGenerator.ViewModels
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     /// <summary>
     /// ConsoleViewModel is the main viewModel for application. It holds the properties that are bound
     /// to the view (Console.xaml), as well as containing the logic for the new weapon generator button.
@@ -44,126 +46,6 @@ namespace WeaponStatGenerator.ViewModels
         private Weapon generatedWeapon;
 
         public ConsoleViewModel(IGenerateNewWeapon generateNewWeapon)
-=======
-=======
->>>>>>> parent of e9ec55b... Resolved merge conflict by using the refactor files and code.
-	/// <summary>
-	/// ConsoleViewModel is the main viewModel for application. It holds the properties that are bound
-	/// to the view (Console.xaml), as well as containing the logic for the new weapon generator button.
-	/// </summary>
-<<<<<<< HEAD
-	public class ConsoleViewModel : BaseViewModel
-=======
-	public class ConsoleViewModel : INotifyPropertyChanged
->>>>>>> parent of e9ec55b... Resolved merge conflict by using the refactor files and code.
-	{
-		
-		NameGenerator nameGenerator = new NameGenerator();
-		DamageTypeGenerator damageType = new DamageTypeGenerator();
-		DamageStatGenerator damageStat = new DamageStatGenerator();
-		Weapon weapon = new Weapon();
-		
-		
-		//This Observable collection uses the enum values from the Weapon class to populate it with string values of the weapon types.
-		ObservableCollection<string> weaponArchTypes = new ObservableCollection<string>(Enum.GetNames(typeof(Weapon.WeaponArchType)));
-		public ObservableCollection<string> WeaponArchTypes 
-		{
-			get 
-			{ 
-				return weaponArchTypes;
-			}
-			set 
-			{ 
-				weaponArchTypes = value;
-				OnPropertyChanged("WeaponArchType");
-				OnPropertyChanged("SelectedWeaponArchType");
-			}
-		}
-		
-		string selectedWeaponArchType;
-		public string SelectedWeaponArchType 
-		{
-			get 
-			{ 
-				return selectedWeaponArchType; 
-			}
-			set 
-			{ 
-				selectedWeaponArchType = value;
-				OnPropertyChanged("SelectedWeaponArchType");
-				OnPropertyChanged("WeaponArchType");
-				OnPropertyChanged("GenerateWeaponCommand");
-			}
-		}
-		
-		string selectedWeaponIcon;	
-		public string SelectedWeaponIcon 
-		{
-			get 
-			{ 
-				selectedWeaponIcon = weapon.GetWeaponIcon(SelectedWeaponArchType);
-				return selectedWeaponIcon;
-			}
-			set 
-			{ 
-				selectedWeaponIcon = value;
-				OnPropertyChanged("SelectedWeaponIcon");
-				OnPropertyChanged("GenerateWeaponCommand");
-				
-			}
-		}
-		
-		string generatedWeaponName;		
-		public string GeneratedWeaponName 
-		{
-			get 
-			{ 
-				generatedWeaponName = nameGenerator.GetRandomWeaponDescriptor() + " " + nameGenerator.GetRandomWeaponNoun();
-				return generatedWeaponName;
-			}
-			set 
-			{ 
-				generatedWeaponName = value;
-				OnPropertyChanged("GeneratedWeaponName");
-			}
-		}
-		
-		string generatedDamageType;
-		public string GeneratedDamageType 
-		{
-			get 
-			{ 
-				generatedDamageType = damageType.GetRandomDamageType();
-				return generatedDamageType;
-			}
-			set 
-			{ 
-				generatedDamageType = value;
-				OnPropertyChanged("GeneratedDamageType");
-			}
-		}
-		
-		int generatedDamageStat;
-		public int GeneratedDamageStat 
-		{
-			get 
-			{ 
-				generatedDamageStat = damageStat.GetRandomDamageValue();
-				return generatedDamageStat;
-			}
-			set 
-			{ 
-				generatedDamageStat = value; 
-				OnPropertyChanged("GeneratedDamageStat");
-			}
-		}
-		
-        private RelayCommand generateWeaponCommand;       
-        public RelayCommand GenerateWeaponCommand
-<<<<<<< HEAD
->>>>>>> cfaac5aab127d08f9cfc654cf44db5101a806ee4
-=======
->>>>>>> parent of e9ec55b... Resolved merge conflict by using the refactor files and code.
         {
             get
             {
@@ -183,9 +65,6 @@ namespace WeaponStatGenerator.ViewModels
         }
 
 		
-		public ConsoleViewModel()
-		{
-		}
 		
 		
 		/// <summary>
@@ -203,10 +82,13 @@ namespace WeaponStatGenerator.ViewModels
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         private void GenerateNewWeapon(WeaponArchType weaponArchType) => GeneratedWeapon = _generateNewWeapon.Generate(weaponArchType);
     }
 =======
+=======
+>>>>>>> parent of e9ec55b... Resolved merge conflict by using the refactor files and code.
 =======
 >>>>>>> parent of e9ec55b... Resolved merge conflict by using the refactor files and code.
 		
@@ -222,9 +104,12 @@ namespace WeaponStatGenerator.ViewModels
 			MessageBox.Show("Please select a weapon type from the list box");
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	}
 >>>>>>> cfaac5aab127d08f9cfc654cf44db5101a806ee4
 =======
+=======
+>>>>>>> parent of e9ec55b... Resolved merge conflict by using the refactor files and code.
 	
 		
 	#region INotifyPropertyChanged Implementation Boilerplate
@@ -242,5 +127,8 @@ namespace WeaponStatGenerator.ViewModels
 	    }
 	#endregion
 	}
+<<<<<<< HEAD
+>>>>>>> parent of e9ec55b... Resolved merge conflict by using the refactor files and code.
+=======
 >>>>>>> parent of e9ec55b... Resolved merge conflict by using the refactor files and code.
 }

@@ -1,23 +1,15 @@
-﻿using System.Windows;
-using WeaponStatGenerator.Models;
-using WeaponStatGenerator.ViewModels;
+﻿using System;
+using System.Windows;
+using System.Data;
+using System.Xml;
+using System.Configuration;
 
 namespace WeaponStatGenerator
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
-    {
-        private void Application_Startup(object sender, StartupEventArgs e)
-        {
-            var viewmodel = new ConsoleViewModel(
-                new GenerateNewWeapon(
-                    new GenerateWeaponName(),
-                    new GenerateDamageType(),
-                    new GenerateDamageStat()));
-
-            new Console() { DataContext = viewmodel }.ShowDialog();
-        }
-    }
+	/// <summary>
+	/// Interaction logic for App.xaml
+	/// </summary>
+	public partial class App : Application
+	{
+	}
 }

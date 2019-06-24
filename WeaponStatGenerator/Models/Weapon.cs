@@ -1,12 +1,14 @@
-﻿﻿/*
+﻿/*
  * User: eneidler
  * Date: 06/13/2019
  * Time: 09:29
- *
+ * 
  */
+using System;
 
 namespace WeaponStatGenerator.Models
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     /// <summary>
     /// The weapon class is used for giving a framework for the types of weapons,
@@ -64,6 +66,8 @@ namespace WeaponStatGenerator.Models
         }
     }
 =======
+=======
+>>>>>>> parent of e9ec55b... Resolved merge conflict by using the refactor files and code.
 	/// <summary>
 	/// The weapon class is used for giving a framework for the types of weapons,
 	/// and a way to access their icons.
@@ -93,6 +97,7 @@ namespace WeaponStatGenerator.Models
 		/// <returns>selectedWeapon</returns>
 		public string GetWeaponIcon(string selectedWeapon)
 		{
+<<<<<<< HEAD
 			if(!string.IsNullOrEmpty(selectedWeapon))
 			{
 				switch (selectedWeapon.ToLower())
@@ -120,11 +125,35 @@ namespace WeaponStatGenerator.Models
 			else
 			{
 				selectedWeapon = "/images/refresh.ico";
+=======
+			switch (selectedWeapon) 
+			{
+				case "Pistol":
+					selectedWeapon = "/images/pistol.ico";
+					break;
+				case "Shotgun":
+					selectedWeapon = "/images/shotgun.ico";
+					break;	
+				case "Carbine":
+					selectedWeapon = "/images/carbine.ico";
+					break;
+				case "Rifle":
+					selectedWeapon = "/images/rifle.ico";
+					break;
+				case "Sniper":
+					selectedWeapon = "/images/sniper.ico";
+					break;
+				case null:
+					selectedWeapon = "/images/refresh.ico";
+					break;
+>>>>>>> parent of e9ec55b... Resolved merge conflict by using the refactor files and code.
 			}
 			return selectedWeapon;
 		}
 		
 	}
+<<<<<<< HEAD
 >>>>>>> cfaac5aab127d08f9cfc654cf44db5101a806ee4
+=======
+>>>>>>> parent of e9ec55b... Resolved merge conflict by using the refactor files and code.
 }
-

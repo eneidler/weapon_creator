@@ -87,6 +87,7 @@
       <DependentUpon>Console.xaml</DependentUpon>
     </Compile>
     <Compile Include="Services\RelayCommand.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\ConsoleViewModel.cs" />
     <Compile Include="ViewModels\Viewmodel.cs" />
   </ItemGroup>

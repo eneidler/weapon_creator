@@ -49,6 +49,8 @@
     <Reference Include="System.Data.DataSetExtensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
@@ -68,10 +70,16 @@
       <SubType>Code</SubType>
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\DamageTypeGenerator.cs" />
-    <Compile Include="Models\DamageStatGenerator.cs" />
-    <Compile Include="Models\NameGenerator.cs" />
+    <Compile Include="Controls\WeaponDisplay.xaml.cs">
+      <DependentUpon>WeaponDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DamageType.cs" />
+    <Compile Include="Models\GenerateDamageStat.cs" />
+    <Compile Include="Models\GenerateDamageType.cs" />
+    <Compile Include="Models\GenerateNewWeapon.cs" />
+    <Compile Include="Models\GenerateWeaponName.cs" />
     <Compile Include="Models\Weapon.cs" />
+    <Compile Include="Models\WeaponArchType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\WPFAssemblyInfo.cs" />
     <Compile Include="Console.xaml.cs">
@@ -81,9 +89,14 @@
     <Compile Include="Services\RelayCommand.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\ConsoleViewModel.cs" />
+    <Compile Include="ViewModels\Viewmodel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Console.xaml" />
+    <Page Include="Controls\WeaponDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -94,8 +107,6 @@
     <Resource Include="Images\sniper.ico" />
     <Resource Include="Images\refresh.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -36,14 +36,16 @@
             HorizontalAlignment="Center"
             Content="Select a weapon type from the list&#10; and click the generate button."
             FontSize="12" />
+
         <ListBox
-            x:Name="WeaponList"
-            Grid.Row="1"
-            Grid.RowSpan="3"
-            HorizontalAlignment="Stretch"
-            HorizontalContentAlignment="Center"
-            ItemsSource="{Binding WeaponArchTypes}"
-            SelectedItem="{Binding SelectedWeaponArchType}" />
+                x:Name="WeaponList"
+                Grid.Row="2"
+                Grid.RowSpan="2"
+                Margin="10"
+                HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Center"
+                ItemsSource="{Binding WeaponArchTypes}"
+                SelectedItem="{Binding SelectedWeaponArchType}" />
 
         <Image Grid.Row="4" Source="{Binding GeneratedWeapon.Icon}" />
 

@@ -14,7 +14,7 @@
         <TextBlock
             HorizontalAlignment="Center"
             FontSize="16"
-            Text="{Binding Type}" />
+            Text="{Binding WeaponType}" />
         <TextBlock
             HorizontalAlignment="Center"
             FontSize="14"

@@ -57,7 +57,8 @@ namespace WeaponStatGenerator.ViewModels
 
         //This is a short version of saying "if null, generate and assign new relay command"
         //If the command is clicked a second time, it will reuse the created command.
-        public ICommand GenerateWeaponCommand { get => _generateWeaponCommand ?? (_generateWeaponCommand = new RelayCommand<object>(_ => GenerateNewWeapon(SelectedWeaponArchType.Value), _ => SelectedWeaponArchType != null)); }
+        public ICommand GenerateWeaponCommand
+        { get => _generateWeaponCommand ?? (_generateWeaponCommand = new RelayCommand<object>(_ => GenerateNewWeapon(SelectedWeaponArchType.Value), _ => SelectedWeaponArchType != null)); }
 
         public Weapon GeneratedWeapon
         {

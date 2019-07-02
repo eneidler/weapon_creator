@@ -58,8 +58,8 @@ namespace WeaponStatGenerator.Models
         private readonly Random _random = new Random();
 
         public string Generate() =>
-            _availableWeaponNouns[_random.Next(0, _availableWeaponNouns.Count)]
+            _availableWeaponDescriptor[_random.Next(0, _availableWeaponDescriptor.Count)]
             + " "
-            + _availableWeaponDescriptor[_random.Next(0, _availableWeaponDescriptor.Count)];
+            + _availableWeaponNouns[_random.Next(0, _availableWeaponNouns.Count)];
     }
 }

@@ -47,7 +47,9 @@
                 ItemsSource="{Binding WeaponArchTypes}"
                 SelectedItem="{Binding SelectedWeaponArchType}" />
 
-        <Image Grid.Row="4" Source="{Binding GeneratedWeapon.Icon}" />
+        <Image Grid.Row="4" 
+               Margin="0 0 0 10"
+               Source="{Binding GeneratedWeapon.Icon}" />
 
         <ContentPresenter
             Grid.Row="2"
